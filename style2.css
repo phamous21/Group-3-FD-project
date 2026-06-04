@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid black;
+  padding: 20px 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.navbar-menu,
+a {
+  text-decoration: none;
+  color: #242424;
+  cursor: pointer;
+}
+.get-started {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #191919;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+h2 {
+  font-size: 2.1rem;
+}
+.body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5rem;
+  padding-top: 3.6rem;
+
+}
+
+img {
+  width: 420px;
+  height: 500px;
+}
+.img {
+  padding-top: 20px;
+}
+.words {
+  padding-right: 50px;
+  padding-top: 50px;
+}
+.words p {
+  padding: 50px 0;
+  font-size: 27px;
+  font-weight: bold;
+}
+h1 {
+  padding-top: 20px;
+  font-weight: none;
+  font-size: 7.6rem;
+  letter-spacing: -10px;
+  line-height: 0.8;
+}
+.start-reading {
+  padding: 15px 50px;
+  border-radius: 50px;
+  background-color: #191919;
+  border: none;
+  color: #fff;
+  font-size: large;
+  cursor: pointer;
+}
+footer {
+  border-top: 0.5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.new {
+  display: none;
+  flex-direction: grid;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-menu a {
+    display: none;
+  }
+  .words p {
+    padding: 50px 0;
+    font-size: 25px;
+    font-weight: lighter;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h1 {
+    padding-top: 30px;
+    font-size: 5.3rem;
+    letter-spacing: -1px;
+    line-height: 0.75;
+  }
+  img {
+    display: none;
+  }
+  .navbar {
+    flex-direction: grid;
+    gap: 5rem;
+    padding: 15px 22px;
+  }
+  .body {
+    flex-direction: grid;
+
+    padding: 5rem 0 22px 22px;
+  }
+  .old {
+    display: none;
+  }
+  .new {
+    display: block;
+    padding-left: 22px;
+  }
+  .new a {
+    padding-right: 20px;
+  }
+  footer {
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+
+
